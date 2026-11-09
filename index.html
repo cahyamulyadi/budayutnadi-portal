@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Ekosistem BuDayUT NaDi</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #1b5e20, #2e7d32); 
+            color: #333; 
+            min-height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+        }
+
+        .portal-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .portal-header {
+            background-color: #1b5e20;
+            color: white;
+            padding: 25px 20px;
+        }
+
+        /* Styling Area Logo */
+        .logo-container {
+            margin: 0 auto 12px auto;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ffb300;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portal-header h1 {
+            font-size: 1.4rem;
+            margin-bottom: 4px;
+        }
+
+        .portal-header p {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        .menu-list {
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .menu-btn {
+            background-color: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            color: #1b5e20;
+            padding: 14px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+        }
+
+        .menu-btn:hover {
+            background-color: #1b5e20;
+            color: white;
+            border-color: #1b5e20;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(27,94,32,0.2);
+        }
+
+        .menu-btn span.desc {
+            font-size: 0.75rem;
+            font-weight: normal;
+            opacity: 0.75;
+            display: block;
+            text-align: left;
+        }
+
+        .menu-btn.highlight {
+            border-color: #ffb300;
+            background-color: #fff8e1;
+        }
+        .menu-btn.highlight:hover {
+            background-color: #ffb300;
+            color: #1b5e20;
+        }
+
+        .portal-footer {
+            background-color: #f1f3f4;
+            padding: 15px;
+            font-size: 0.75rem;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portal-card">
+        <!-- Header Portal dengan Logo logo.png -->
+        <div class="portal-header">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo BuDayUT NaDi">
+            </div>
+            <h1>BuDayUT NaDi Portal</h1>
+            <p>Integrated Circular Farming System & Ecosystem</p>
+        </div>
+
+        <!-- Daftar Tombol Menu / Modul -->
+        <div class="menu-list">
+            <!-- 1. Dashboard Utama / Monitoring -->
+            <a href="utama.html" class="menu-btn">
+                <div style="text-align: left;">
+                    📊 Dashboard & Monitoring Utama
+                    <span class="desc">Aplikasi operasional inti sistem</span>
+                </div>
+                <span>&rarr;</span>
+            </a>
+
+            <!-- 2. NaDi-LINK -->
+            <a href="nadilink.html" class="menu-btn">
+                <div style="text-align: left;">
+                    🔗 NaDi-LINK
+                    <span class="desc">Jaringan & ekosistem kolaborasi</span>
+                </div>
+                <span>&rarr;</span>
+            </a>
+
+            <!-- 3. Dashboard NaDi-Link -->
+            <a href="dashboardlink.html" class="menu-btn">
+                <div style="text-align: left;">
+                    📈 Dashboard NaDi-Link
+                    <span class="desc">Analitik dan laporan jaringan</span>
+                </div>
+                <span>&rarr;</span>
+            </a>
+
+            <!-- 4. Eduwisata -->
+            <a href="eduwisata.html" class="menu-btn">
+                <div style="text-align: left;">
+                    🌿 Eduwisata
+                    <span class="desc">Program wisata edukasi pertanian</span>
+                </div>
+                <span>&rarr;</span>
+            </a>
+
+            <!-- 5. Reservasi -->
+            <a href="reservasi.html" class="menu-btn">
+                <div style="text-align: left;">
+                    📅 Reservasi Kunjungan
+                    <span class="desc">Pemesanan tempat & jadwal</span>
+                </div>
+                <span>&rarr;</span>
+            </a>
+
+            <!-- 6. NaDi-QuRing (Pemasaran & Konsinyasi) -->
+            <a href="quring.html" class="menu-btn highlight">
+                <div style="text-align: left;">
+                    🛒 NaDi-QuRing (Pemasaran)
+                    <span class="desc">Pusat pemasaran & konsinyasi produk</span>
+                </div>
+                <span>&rarr;</span>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="portal-footer">
+            &copy; 2026 BuDayUT NaDi &bull; Kp. GBO Cipanas Cianjur
+        </div>
+    </div>
+
+</body>
+</html>
